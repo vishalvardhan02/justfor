@@ -17,7 +17,7 @@ def append_to_file(text):
     file_path = "myfile.txt"
     with open(file_path, 'a') as file:
         content = text
-        file.write(content)
+        file.write(content + '\n' + '\n')
     return FileResponse(file_path, filename="myfile.txt")
     
 
