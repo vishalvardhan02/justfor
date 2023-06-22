@@ -15,7 +15,7 @@ def home():
 def append_to_file(text):
     string_to_append = text
     file_path = "myfile.txt"
-    with open(file_path, 'w') as file:
+    with open(file_path, 'a') as file:
         content = text
         file.write(content)
     return FileResponse(file_path, filename="myfile.txt")
