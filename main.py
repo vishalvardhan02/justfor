@@ -14,7 +14,7 @@ def home():
 @app.get('/append_to_file/{text}')
 def append_to_file(text):
     string_to_append = text
-    file_path = "C:/Users/vixha/OneDrive/Desktop/myfile.txt"
+    file_path = "myfile.txt"
     with open(file_path, 'w') as file:
         content = text
         file.write(content)
