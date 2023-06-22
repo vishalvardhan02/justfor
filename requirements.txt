@@ -17,3 +17,5 @@ uvicorn
 uvloop
 httptools
 xgboost
+base64
+pygithub
