@@ -16,7 +16,7 @@ def home():
 
 @app.get('/append_to_file/{text}')
 def append_to_file(text):
-    g = github.Github("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")
+    g = github.Github("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")
 
     repo = g.get_user().get_repo("justfor")
     file = repo.get_contents("myfile.txt")
